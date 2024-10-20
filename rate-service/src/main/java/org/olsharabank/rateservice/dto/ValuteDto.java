@@ -1,7 +1,11 @@
 package org.olsharabank.rateservice.dto;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class ValuteDto {
 
     @JacksonXmlProperty(isAttribute = true)
@@ -24,60 +28,4 @@ public class ValuteDto {
 
     @JacksonXmlProperty(localName = "VunitRate")
     private String vunitRate;
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
-
-    public String getNumCode() {
-        return numCode;
-    }
-
-    public void setNumCode(String numCode) {
-        this.numCode = numCode;
-    }
-
-    public String getCharCode() {
-        return charCode;
-    }
-
-    public void setCharCode(String charCode) {
-        this.charCode = charCode;
-    }
-
-    public int getNominal() {
-        return nominal;
-    }
-
-    public void setNominal(int nominal) {
-        this.nominal = nominal;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public String getVunitRate() {
-        return vunitRate;
-    }
-
-    public void setVunitRate(String vunitRate) {
-        this.vunitRate = vunitRate;
-    }
 }
