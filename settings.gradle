@@ -1,0 +1,6 @@
+rootProject.name = 'bank-application-demo'
+
+include('rate-service')
+include('cache-service')
+include('personal-service')
+include('notification-service')
